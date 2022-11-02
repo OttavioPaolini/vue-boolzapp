@@ -43,7 +43,15 @@
                     </div>
                 </div>
                 <div class="slider-contact">
-                    
+                    <div class="card-contact flex align-item-center" v-for="cards in contacts">
+                        <div class="image-contact">
+                            <img :src=`img/avatar${cards.avatar}.jpg` alt="">
+                        </div>
+                        <div class="name">
+                            <p>{{cards.name}}</p>
+                            <p>Ultimo messaggio inviato</p>
+                        </div>
+                    </div>
                 </div>    
             </nav>
             <div id="main-chat">
@@ -59,8 +67,13 @@
 
                    </div> 
                 </div>
-                <div class="chat">
-                    
+                <div class="chat flex">
+                    <div class="chat-take">
+                        
+                    </div>
+                    <div class="chat-send">
+                        
+                    </div>
                 </div>
                 <div class="bottom-chat">
 
